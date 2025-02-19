@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Happy Valentine’s Day">
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Happy Valentine’s Day My Love">
+<meta property="og:image" content="img.jpg">
+<meta property="og:url" content="/">
+<meta name="twitter:card" content="Happy Valentine’s Day My Love">
+  <link rel="icon" type="image/x-icon" href="img.png">
+
+  <title>Happy Valentine’s Day</title>
+<style>
+    body{
+          overflow:hidden !important;
+            background-color: rgb(238, 144, 255);
+            position:relative;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+    }
+    #container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(238, 144, 255);
+   overflow:hidden !important;
+}
+.book{
+  position: relative;
+  border-radius: 10px;
+  width: 210px;
+  height: 300px;
+  /* Internal Image, upload your couple image here */*/
+  background-image: url(https://shorturl.at/euzMR);
+  background-size: cover;
+  background-position: center;
+  background-size: 97%;
+  -webkit-box-shadow: 1px 1px 12px black;
+  box-shadow: 1px 1px 12px black;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+}
+.cover{
+  top: 0;
+  position: absolute;
+  background-color: lightgray;
+  background-image: linear-gradient( 40deg,rgb(218, 1, 203) , black);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px black;
+  box-shadow: 1px 1px 12px black; }
+
+.book:hover .cover{
+ -webkit-transition: all 0.5s;
+ transition: all 0.5s;
+ -webkit-transform: rotatey(-85deg);
+ -ms-transform: rotateY(-85deg);
+ transform: rotatey(-95deg);
+}
+
+.heart {
+  position: relative;
+  background-color: #e60303;
+  height: 60px;
+  width:60px;
+  top:180px;
+  left:75px;
+  transform: rotate(-45deg);
+  animation: .8s beat infinite;
+}
+.heart:before, .heart:after {
+  content:"";
+  background-color: #e60303;
+  border-radius:50%;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+}
+.heart:before {
+  top:-30px;
+  left:0;
+}
+.heart:after {
+  left:30px;
+  top:0;
+}
+.smile {
+  position: absolute;
+  width:30px;
+  height:15px;
+  background-color: #333;
+  z-index:1;
+  border-radius: 0 0 100px 100px;
+  top:200px;
+  left:90px;
+  overflow: hidden;
+}
+.smile:before {
+  content:"";
+  position: absolute;
+  border-radius:50%;
+  width:20px;
+  height:20px;
+  background-color: #030202;
+  top:5px;
+  left:5px;
+}
+.eyes {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #333;
+  width:10px;
+  height:10px;
+  z-index:1;
+  top:185px;
+  left:120px;
+  box-shadow: -40px 0 #333;
+  transform-origin: 50%;
+  animation: close 2s infinite;
+}
+@keyframes close {
+  0%, 100% {
+    transform: scale(1, .05);
+    }
+  5%, 95% {
+        transform: scale(1, 1);
+    }
+}
+@keyframes beat {
+  0%, 40%, 100% {
+    transform: scale(1) rotate(-45deg);
+  }
+  25%, 60% {
+    transform: scale(1.1) rotate(-45deg);
+  }
+}
+.notes {
+  position: absolute;
+  color: #ff9595;
+  font-size: 30px;
+  top:40px;
+  width:200px;
+  text-align: center;
+  font-family: 'Protest Revolution', sans-serif;
+}
+.notes:before, .notes:after {
+  position: absolute;
+  left:5px;
+  text-align: center;
+  width:200px;
+}
+.notes:before {
+  content:"Valentine's";
+  top:30px;
+  color: #d04e4e;
+  font-family: 'Protest Riot', sans-serif;
+}
+.notes:after {
+  content:"day!";
+  top:60px;
+  font-family: 'Protest Riot', sans-serif;
+}
+
+.tap{
+    color:#fff;
+text-align:center;
+position:absolute;
+bottom:10px;
+right:10px;
+}
+.tap a{
+    font-size:13px;
+    color:#fff;
+}
+img{
+
+width:83%;
+}
+h2{
+    font-size:22px;
+    font-family:'Protest Riot', sans-serif;
+    
+}
+h2 span{
+    color:red;
+    font-size:28px;
+    font-family:'Protest Riot', sans-serif;
+
+}
+
+.dot{
+  width:10px;
+  height:10px;
+  position:absolute;
+  background: url(https://image.ibb.co/kyUHab/rose.png);
+  background-size: 100% 100%;
+}
+#body{
+      /* height: 100vh;
+      width: 100vw; */
+      overflow:hidden;
+}
+
+    </style>
+  <!-- Add your CSS Style here -->
+</head>
+<body >
+    <div id="body">    </div>
+        <div id="container">
+        <div class="book">
+        <div class="cover">
+        <div class="notes">Happy</div>
+        <div class="heart"></div>
+        <div class="smile"></div>
+        <div class="eyes"></div>
+        <div class="tap">
+
+                    <a href="#">Tap here</a>
+            </div>
+        </div>
+        <div style="text-align:center">
+            <h2>Happy Valentine’s <br>  Day<br> <span>My Love</span></h2>
+            <img class="img" src="img.png">
+            </div>
+        </div>
+        </div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"> </script>
+<script>
+
+// TweenLite.set("#body",{perspective:600})
+
+var total = 190;
+var warp = document.getElementById("body"),	w = window.innerWidth , h = window.innerHeight;
+ 
+ for (i=0; i<total; i++){ 
+   var Div = document.createElement('div');
+   TweenLite.set(Div,{attr:{class:'dot'},x:R(0,w),y:R(-200,-150),z:R(-200,200)});
+   warp.appendChild(Div);
+   animm(Div);
+ }
+ 
+ function animm(elm){   
+   TweenMax.to(elm,R(6,15),{y:h+100,ease:Linear.easeNone,repeat:-1,delay:-15});
+   TweenMax.to(elm,R(4,8),{x:'+=100',rotationZ:R(0,180),repeat:-1,yoyo:true,ease:Sine.easeInOut});
+   TweenMax.to(elm,R(2,8),{rotationX:R(0,360),rotationY:R(0,360),repeat:-1,yoyo:true,ease:Sine.easeInOut,delay:-5});
+ };
+
+function R(min,max) {return min+Math.random()*(max-min)};
+
+</script>
+</body>
+</html>
