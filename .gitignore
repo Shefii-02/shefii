@@ -3,6 +3,8 @@
 /public/build
 /public/hot
 /public/storage
+/public/crm
+/public/leadgenpro
 /storage/*.key
 /vendor
 .env
